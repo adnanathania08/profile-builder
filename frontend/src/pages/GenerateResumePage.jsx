@@ -7,6 +7,7 @@ import { useRef } from "react";
 import Label from "../components/utility-components/Label";
 import Textarea from "../components/utility-components/Textarea";
 import RichTextEditor from "../components/utility-components/Editor";
+import Rich from "../components/utility-components/NewEditor";
 
 const GenerateNewResume = () => {
   const [selectedCreativity, setSelectedCreativity] = useState("Good");
@@ -143,6 +144,7 @@ const GenerateNewResume = () => {
         </div>
         <div className="right w-[50%] md:w-full">
           <RichTextEditor />
+          {/* <QuillToolbar /> */}
         </div>
       </div>
     </div>
