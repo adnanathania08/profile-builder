@@ -40,7 +40,6 @@ const AuthPage = () => {
         localStorage.setItem("jwt", response?.token);
         setStateReload(Math.random());
         navigate("/dashboard");
-        // alert("Form submitted succesfully");
       } else if (response.status === "fail") {
         alert(response.message || "Some error occured");
       }
