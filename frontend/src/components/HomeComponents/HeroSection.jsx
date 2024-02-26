@@ -117,7 +117,7 @@ const HeroSection = () => {
       </div>
       <FourSimpleSteps />
       <WhyChooseUs ref={chooseUsRef} />
-      <Resume1 />
+      {/* <Resume1 /> */}
       <OurFeatures ref={featuresRef} />
       <StepComponent1 />
       <StepComponent2 />
