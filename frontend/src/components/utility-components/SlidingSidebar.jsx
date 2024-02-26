@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import { useState } from "react";
 import { MdDashboardCustomize } from "react-icons/md";
 import { HiMenuAlt2 } from "react-icons/hi";
@@ -9,7 +10,8 @@ import { GiArtificialHive } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { PiStarFourBold } from "react-icons/pi";
 import { MdSupport } from "react-icons/md";
-const SlidingSidebar = () => {
+import { memo } from "react";
+const SlidingSidebar = memo(function () {
   const [open, setOpen] = useState(true);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [responsiveNavbarOpen, setResponsiveNavbarOpen] = useState(false);
@@ -248,55 +250,9 @@ const SlidingSidebar = () => {
           </div>
         </div>
       )}
-
-      {/* <div className="bg-green-400 w-full h-full overflow-x-hidden overflow-y-auto no-scrollbar">
-        <p className="text-3xl text-black p-5">
-          {" "}
-          Certainly! Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed id justo non arcu cursus scelerisque. Maecenas non justo vitae
-          augue elementum accumsan. Vivamus id ipsum nec justo sollicitudin
-          tristique. Fusce vel augue et arcu imperdiet laoreet. Integer volutpat
-          nisl nec augue auctor, ac consectetur tortor fermentum. Suspendisse
-          potenti. Fusce vel sapien vitae purus ullamcorper efficitur. Sed in
-          massa vitae orci aliquet feugiat. Duis varius dolor eu orci fermentum,
-          in fermentum lacus ullamcorper. Ut et felis vitae velit semper
-          elementum. Quisque cursus, justo a scelerisque tincidunt, dolor purus
-          vestibulum neque, non tincidunt purus mauris at sem. Integer at justo
-          auctor, tincidunt leo vel, cursus sem. Sed id elit non dolor laoreet
-          efficitur in nec justo. Pellentesque habitant morbi tristique senectus
-          et netus et malesuada fames ac turpis egestas. Vestibulum at odio non
-          lacus rutrum luctus. In hac habitasse platea dictumst. Nulla facilisi.
-          Ut ut sagittis enim. Integer vestibulum tincidunt justo, non facilisis
-          libero laoreet nec. Sed ut venenatis urna. Vivamus cursus mi eu mi
-          vulputate, ac facilisis dolor dapibus. Vestibulum ante ipsum primis in
-          faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas vel
-          justo vel urna tincidunt facilisis eu in ex. Proin sed diam nec libero
-          accumsan fringilla. Curabitur a justo eu orci malesuada dictum. Nam
-          consequat justo a risus consectetur, id varius dolor fermentum.
-          Suspendisse potenti. Quisque euismod ultrices neque, ut laoreet leo
-          finibus id. Morbi fringilla, justo at convallis sodales, massa turpis
-          vehicula neque, a congue elit mauris eu nunc. Mauris ultricies
-          scelerisque purus, eu congue nisi interdum vel. Sed ut nisl nec purus
-          laoreet congue vel at elit. Integer ut cursus nisl. Duis id justo sit
-          amet nulla gravida blandit eget ut justo. In hac habitasse platea
-          dictumst. Nunc at quam vel sapien luctus laoreet. Lorem ipsum dolor
-          sit amet, consectetur adipiscing elit. Sed auctor ipsum eget justo
-          consectetur, id varius justo consequat. Integer eu semper ipsum.
-          Suspendisse vel nisi ac urna bibendum elementum vel at metus. Donec
-          facilisis erat nec velit malesuada, ac ultricies tellus luctus. Nunc
-          euismod urna non arcu rhoncus, a cursus ligula scelerisque. Curabitur
-          sit amet mauris vel elit tempor venenatis eget nec ipsum. Sed
-          ullamcorper scelerisque cursus. Aenean auctor, tortor id bibendum
-          tristique, justo odio cursus turpis, vel sodales velit mauris ut enim.
-          Sed vehicula leo a mi bibendum cursus. Vivamus feugiat velit non justo
-          volutpat, a hendrerit felis interdum. Suspendisse vel justo et turpis
-          iaculis convallis. In tristique lectus ac purus fringilla, ut
-          sollicitudin libero feugiat. Vivamus id luctus libero.
-        </p>
-      </div> */}
     </div>
   );
-};
+});
 
 export default SlidingSidebar;
 

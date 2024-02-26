@@ -122,7 +122,7 @@ const DashboardPage = () => {
             <Progress
               className="w-[90%]"
               colorScheme="customColor"
-              trackColorScheme="red"
+              trackcolorscheme="red"
               isAnimated={true}
               value={80}
               bg="#a45848"
