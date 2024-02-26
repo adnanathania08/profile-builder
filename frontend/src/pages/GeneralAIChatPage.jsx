@@ -18,14 +18,12 @@ const GeneralAIChatPage = () => {
   const { user, setStateReload } = useContext(MainContext);
   const [errorVisible, setErrorVisible] = useState(false);
   const navigate = useNavigate();
-  const [selectedConversation, setSelectedConversation] = useState(
-    user.conversations[0]._id
-  );
-  console.log("selectedConversationId: ", selectedConversation);
-  if (user.conversations[0]) {
-    console.log("Message: ", user.conversations[0]);
-    // setSelectedConversation(user.conversations[0]._id);
-  }
+  const [selectedConversation, setSelectedConversation] = useState("");
+  // console.log("selectedConversationId: ", selectedConversation);
+  // if (user.conversations[0]) {
+  //   console.log("Message: ", user.conversations[0]);
+  //   // setSelectedConversation(user.conversations[0]._id);
+  // }
   const getSelectedConversation = user?.conversations?.find(
     (item) => item?._id === selectedConversation
   );
